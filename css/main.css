@@ -574,9 +574,10 @@ pre {
 }
 
 pre {
-    padding: 2.4rem 3rem 3rem;
+    /* padding: 2.4rem 3rem 3rem; */
     background: #F1F1F1;
     overflow-x: auto;
+    border-radius: 1rem;
 }
 
 code {
@@ -593,7 +594,7 @@ pre>code {
     display: block;
     white-space: pre;
     line-height: 2;
-    padding: 0;
+    padding: 0 2rem;
     margin: 0;
 }
 

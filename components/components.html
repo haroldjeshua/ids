@@ -228,7 +228,9 @@
                 <a class="ids-btn light-btn">Light Button</a>
 
                 <h5 class="add-top">Implementation:</h5>
-                <pre><code class="language-html">* Insert code here *</code></pre>
+                <pre><code class="html">
+* insert code here *                
+                </code></pre>
             </div>
 
             <div class="col-full tab-full mob-full add-bottom">
@@ -238,6 +240,15 @@
                 <a class="ids-btn outline-btn">Outline Button</a>
                 <a class="ids-btn outline-btn grey-sec">Outline Button</a>
                 <a class="ids-btn outline-btn light-sec">Outline Button</a>
+
+                <h5 class="add-top">Implementation:</h5>
+                <pre><code class="javascript">
+$(document).ready(function() {
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    });
+});
+                    </code></pre>
             </div>
         </div>
 
