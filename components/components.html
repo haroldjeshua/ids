@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#191a1b">
+
+    <meta name="author" content="IntegrityNet">
+    <meta name="description" content="Passion for Excellence and Dedication to Rendering Quality Service">
+    <meta name="keywords" content="web design, design, design system, visual design, visual languange, design language, ui, ux, uiux, components, high-level components, design principles, design tokens, guidelines, ui guidelines, ux guidelines, ui patterns, templates, ux flows, design reference, design vocabulary">
+
+    <title>Components · IntegrityUI</title>
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../logo/apple-icon-180.png">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+</head>
+
+<body class="ids-components">
+    <div id="preloader">
+        <div id="loader">
+            <img src="../img/ids-icon.png" alt="IDS Logo" class="ids-logo">
+        </div>
+    </div>
+
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="../">
+                <div class="logo-text">
+                    <img src="../img/ids-icon.png" alt="ids icon"> Integrity<span>UI</span>
+                </div>
+            </a>
+        </div>
+
+        <nav class="row header-nav-wrap wide">
+            <ul class="header-main-nav">
+                <li><a href="../news/" title="What's New"><i class="mdi mdi-circle-medium"></i> What's New</a></li>
+                <li><a href="../ids/" title="Design">Design</a></li>
+                <li class="active"><a href="../" title="Components">Components</a></li>
+            </ul>
+
+            <ul class="header-social">
+                <a href="../docs/" class="ids-btn primary-btn rounded-5-btn">Get Started</a>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+    
+    <section class="s-section">
+        <div class="row has-bottom-sep add-bottom">
+            <div class="col-eight tab-full mob-full">
+                <h3 class="subhead">IDS</h3>
+
+                <h1>Components</h1>
+
+                <p class="lead">
+                    Integrity Components are interactive building blocks for creating a user interface.
+                </p>
+            </div>
+
+            <div class="col-full">
+                <div class="filter-wrapper">
+                    <div class="filter-item">
+                        Splash Screens + Preloaders
+                    </div>
+                    <div class="filter-item">
+                        Grid System
+                    </div>
+                    <div class="filter-item">
+                        Navigation Bars
+                    </div>
+                    <div class="filter-item">
+                        Section + Section Utilities
+                    </div>
+                    <div class="filter-item">
+                        Typography
+                    </div>
+                    <div class="filter-item">
+                        Buttons w/ Buttons Modifiers
+                    </div>
+                    <div class="filter-item">
+                        Tabs
+                    </div>
+                    <div class="filter-item">
+                        Forms & Text fields
+                    </div>
+                    <div class="filter-item">
+                        Modals
+                    </div>
+                    <div class="filter-item">
+                        Breadcrumbs
+                    </div>
+                    <div class="filter-item">
+                        Alerts + Toasts
+                    </div>
+                    <div class="filter-item">
+                        Label Tags
+                    </div>
+                    <div class="filter-item">
+                        Progress Bars
+                    </div>
+                    <div class="filter-item">
+                        Cards
+                    </div>
+                    <div class="filter-item">
+                        Block Options
+                    </div>
+                    <div class="filter-item">
+                        Tables + Pagination
+                    </div>
+                    <div class="filter-item">
+                        Misc
+                    </div>
+                    <div class="filter-item">
+                        <i class="mdi mdi-plus"></i> Extras
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section hidden class="s-section">
+        <!-- Text Fields -->
+        <div class="row add-bottom">
+            <form action="">
+                <div class="col-full">
+                    <h3>Text Fields</h3>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>With Leading Icon</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="">Textfield Label</label>
+                        <div class="textfield-inner with-leading">
+                            <i class="mdi mdi-account textfield-icon textfield-icon--leading"></i>
+                            <input type="text" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>With Trailing Icon</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner with-trailing">
+                            <i class="mdi mdi-alert-circle textfield-icon textfield-icon--trailing"></i>
+                            <input type="text" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>With Both Icons</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner textfield-inner--password with-both-icons">
+                            <i class="mdi mdi-lock-outline textfield-icon textfield-icon--leading"></i>
+                            <i class="mdi mdi-eye textfield-icon textfield-icon--trailing"></i>
+                            <input type="password" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-four md-six tab-full">
+                    <h5>With Help Text</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner">
+                            <input type="text" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help">
+                            <div class="textfield-message"><i class="mdi mdi-help-circle"></i> Help message</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>With Help Text + Invalid</h5>
+
+                    <div class="textfield-wrapper is-invalid">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner">
+                            <input type="text" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help">
+                            <div class="textfield-message"><i class="mdi mdi-alert-circle"></i> Error message</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>With Invalid + Icons</h5>
+
+                    <div class="textfield-wrapper is-invalid">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner textfield-inner--password with-both-icons">
+                            <i class="mdi mdi-lock-outline textfield-icon textfield-icon--leading"></i>
+                            <i class="mdi mdi-eye textfield-icon textfield-icon--trailing"></i>
+                            <input type="password" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help">
+                            <div class="textfield-message"><i class="mdi mdi-alert-circle"></i> Error message</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-four md-six tab-full">
+                    <h5>With Character Counter</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label <small>not yet working</small></label>
+                        <div class="textfield-inner">
+                            <input type="text" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help is-visible">
+                            <div class="textfield-message is-invisible">Error message</div>
+                            <div class="textfield-counter">0 / 20</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>Select</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner">
+                            <div class="ids-custom-select">
+                                <select class="full-width" name="textfield-sample">
+                                    <option value="0">Value 1</option>
+                                    <option value="1">Value 2</option>
+                                    <option value="2">Value 3</option>
+                                    <option value="3">Value 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-four md-six tab-full">
+                    <h5>Disabled</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner">
+                            <input type="text" name="textfield-sample" disabled>
+                        </div>
+                        <div class="textfield-help">
+                            <div class="textfield-message">(Disabled)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>Search</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="">Textfield Label</label>
+                        <div class="textfield-inner with-leading textfield-action">
+                            <i class="mdi mdi-magnify textfield-icon textfield-icon--leading"></i>
+                            <input type="search" name="textfield-sample" placeholder="Search">
+                            <div class="textfield-cta">
+                                <button class="ids-btn primary-btn small-btn">Search</button>
+                            </div>
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-four md-six tab-full">
+                    <h5>Upload Photo (work in progress)</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="">Textfield Label</label>
+                        <div class="textfield-inner with-leading textfield-file">
+                            <i class="mdi mdi-file-image-outline textfield-icon textfield-icon--leading"></i>
+                            <input type="file" name="textfield-sample" placeholder="Upload an image">
+                        </div>
+                        <div class="textfield-help">
+                            <div class="textfield-message">File should be an image (.jpeg, .png, .svg, .gif)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-four md-six tab-full">
+                    <h5>Date</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="">Textfield Label</label>
+                        <div class="textfield-inner textfield-date">
+                            <input type="date" name="textfield-sample">
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>Toggle Switch</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner with-switch">
+                            <label class="switch">
+                                <input type="checkbox" checked name="textfield-sample">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-four md-six tab-full">
+                    <h5>Toggle Switch w/ One Label</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner with-switch">
+                            <label class="switch with-label">
+                                <input type="checkbox" checked name="textfield-sample">
+                                <span class="slider round"></span>
+                                <div class="switch-text switch-text--off">Off</div>
+                                <div class="switch-text switch-text--on">On</div>
+                            </label>
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-four md-six tab-full">
+                    <h5>Toggle Switch w/ Labels</h5>
+
+                    <div class="textfield-wrapper">
+                        <label for="textfield-sample">Textfield Label</label>
+                        <div class="textfield-inner with-switch">
+                            <label class="switch with-labels">
+                                <input type="checkbox" checked name="textfield-sample">
+                                <span class="slider round"></span>
+                                <div class="switch-text switch-text--left">No</div>
+                                <div class="switch-text switch-text--right">Yes</div>
+                            </label>
+                        </div>
+                        <div class="textfield-help is-invisible">
+                            <div class="textfield-message">Help message</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Clean Buttons -->
+        <div class="row add-bottom">
+            <div class="col-eight tab-full mob-full">
+                <h3>Clean Buttons</h3>
+                <p>
+                    <a class="btn btn--primary full-width" href="#0">Primary Button</a>
+                    <a class="btn full-width" href="#0">Default Button</a>
+                    <a class="btn btn--stroke full-width" href="#0">Stroke Button</a>
+                    <a class="btn btn--stroke btn--small full-width" href="#0">Small Button</a>
+                    <a class="btn btn--stroke btn--xsmall full-width" href="#0">XSmall Button</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Custom Buttons -->
+        <div  class="row add-bottom">
+            <div class="col-full">
+                <h3>Custom Buttons</h3>
+            </div>
+
+            <div class="col-full">
+                <a class="ids-btn-link default-btn">Button Link</a>
+                <a class="ids-btn-link primary-btn">Button Link</a>
+                <a class="ids-btn-link dark-btn">Button Link</a>
+                <a class="ids-btn-link grey-btn">Button Link</a>
+                <a class="ids-btn-link light-btn">Button Link</a>
+                <br>
+                <br>
+                <a class="ids-btn primary-btn">Primary Button</a>
+                <a class="ids-btn dark-btn">Dark Button</a>
+                <a class="ids-btn grey-btn">Grey Button</a>
+                <a class="ids-btn light-btn">Light Button</a>
+                <br>
+                <a class="ids-btn outline-btn main-sec">Outline Button</a>
+                <a class="ids-btn outline-btn">Outline Button</a>
+                <a class="ids-btn outline-btn grey-sec">Outline Button</a>
+                <a class="ids-btn outline-btn light-sec">Outline Button</a>
+                <br>
+                <a class="ids-btn flat-btn">Flat Button</a>
+                <a class="ids-btn flat-btn light-text">Flat Button</a>
+                <a class="ids-btn raised-btn">Raised Button</a>
+                <br>
+                <a class="ids-btn primary-btn rounded-btn">Rounded Button</a>
+                <a class="ids-btn primary-btn rounded-15-btn">Rounded 15 Button</a>
+                <a class="ids-btn primary-btn rounded-10-btn">Rounded 10 Button</a>
+                <a class="ids-btn primary-btn rounded-5-btn">Rounded 5 Button</a>
+                <a class="ids-btn primary-btn rectangle-btn">Rect Button</a>
+                <br>
+                <a class="ids-btn primary-btn"><i class="mdi mdi-menu"></i> Button w/ Icon Left</a>
+                <a class="ids-btn primary-btn icon-square"><i class="mdi mdi-menu"></i></a>
+                <a class="ids-btn primary-btn">Button w/ Icon Right <i class="mdi mdi-menu"></i></a>
+                <br>
+                <a class="ids-btn primary-btn circle-btn"><i class="mdi mdi-menu"></i></a>
+                <a class="ids-btn dark-btn circle-btn"><i class="mdi mdi-menu"></i></a>
+                <a class="ids-btn grey-btn circle-btn"><i class="mdi mdi-menu"></i></a>
+                <a class="ids-btn light-btn circle-btn"><i class="mdi mdi-menu"></i></a>
+                <br>
+                <a class="fab-btn"><i class="mdi mdi-close"></i></a>
+                <a class="fab-btn light-btn"><i class="mdi mdi-close"></i></a>
+                <a class="fab-btn dark-btn"><i class="mdi mdi-close"></i></a>
+                <a class="fab-btn light-btn medium-btn"><i class="mdi mdi-close"></i></a>
+                <a class="fab-btn light-btn large-btn"><i class="mdi mdi-close"></i></a>
+                <br>
+                <a class="ids-btn alert-btn danger-btn">Danger Button</a>
+                <a class="ids-btn alert-btn warning-btn">Warning Button</a>
+                <a class="ids-btn alert-btn info-btn">Info Button</a>
+                <a class="ids-btn alert-btn success-btn">Success Button</a>
+                <br>
+                <a class="ids-btn primary-btn small-btn">Button Small</a>
+                <a class="ids-btn primary-btn">Button Regular</a>
+                <a class="ids-btn primary-btn medium-btn">Button Medium</a>
+                <a class="ids-btn primary-btn large-btn">Button Large</a>
+                <br>
+                <a class="ids-btn primary-btn block-btn">Button Block</a>
+            </div>
+        </div>
+
+        <!-- ids Cards -->
+        <div class="row add-bottom">
+            <div class="col-full">
+                <h3>ids Cards</h3>
+            </div>
+
+            <div class="col-six md-six tab-full">
+                <div class="ids-card">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card default)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card--clean">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card default + clean)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card--round ids-card--clean">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card default round + clean)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card--color">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card color)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card--round">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card default round)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card--color ids-card--round">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card color round)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card-box">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card box)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-six md-six tab-full">
+                <div class="ids-card ids-card-box ids-card--color">
+                    <div class="ids-card--header">
+                        <div>ids Title <small>(ids card box color)</small></div>
+                    </div>
+
+                    <div class="ids-card--body">
+                        ids Body
+                    </div>
+
+                    <div class="ids-card--footer">
+                        ids Footer
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div class="row add-bottom">
+            <div class="col-full">
+                <h3>Custom Modals</h3>
+            </div>
+
+            <div class="col-full">
+                <a class="ids-btn primary-btn openDefault">Modal Default</a>
+                <a class="ids-btn primary-btn openDialog">Modal Dialog</a>
+                <a class="ids-btn primary-btn openSmall">Modal Small</a>
+                <a class="ids-btn primary-btn openMedium">Modal Medium</a>
+                <a class="ids-btn primary-btn openLarge">Modal Large</a>
+                <a class="ids-btn primary-btn openFull">Modal Full</a>
+                <a class="ids-btn primary-btn openSheet">Modal Bottom Sheet</a>
+            </div>
+
+            <div class="col-full">
+                <a class="ids-btn outline-btn openTop">Modal Top</a>
+                <a class="ids-btn outline-btn openRight">Modal Right</a>
+                <a class="ids-btn outline-btn openBottom">Modal Bottom</a>
+                <a class="ids-btn outline-btn openLeft">Modal Left</a>
+            </div>
+
+        </div>
+
+        <!-- Form Styles -->
+        <div class="row add-bottom">
+            <div class="col-six tab-full">
+                <h3>Form Styles</h3>
+
+                <form>
+                    <div>
+                        <label for="sampleInput">Your email</label>
+                        <input class="full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
+                    </div>
+                    <div>
+                        <label for="sampleRecipientInput">Reason for contacting</label>
+                        <div class="ids-custom-select">
+                            <select class="full-width" id="sampleRecipientInput">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Report</option>
+                                <option value="Option 3">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="full-width" placeholder="Your message" id="exampleMessage"></textarea>
+
+                    <label class="add-bottom">
+                        <input type="checkbox">
+                        <span class="label-text">Send a copy to yourself</span>
+                    </label>
+                
+                    <input class="btn--primary full-width" type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="col-six tab-full">
+                <h3>Alert Boxes</h3>
+
+                <br>
+                
+                <div class="alert-box alert-box--error hideit">
+                    <p>Error Message. Your Message Goes Here.</p>
+                    <i class="mdi mdi-close alert-box__close" aria-hidden="true"></i>
+                </div>
+                        
+                <div class="alert-box alert-box--success hideit">
+                    <p>Success Message. Your Message Goes Here.</p>
+                    <i class="mdi mdi-close alert-box__close" aria-hidden="true"></i>
+                </div>
+                        
+                <div class="alert-box alert-box--info hideit">
+                    <p>Info Message. Your Message Goes Here.</p>
+                    <i class="mdi mdi-close alert-box__close" aria-hidden="true"></i>
+                </div>
+                        
+                <div class="alert-box alert-box--notice hideit">
+                    <p>Notice Message. Your Message Goes Here.</p>
+                    <i class="mdi mdi-close alert-box__close" aria-hidden="true"></i>
+                </div>
+            
+            </div>
+        </div>
+
+        <!-- Switch Toggle + Label Tags -->
+        <div class="row add-bottom">
+            <div class="col-six">
+                <h3>Switch Slide Toggle</h3>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label><br><br>
+                
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="col-six">
+                <h3>Label Tags</h3>
+                <p>
+                    <label class="label-tag">Label Tag</label>
+                    <label class="label-tag label-tag--main">Label Tag Main</label>
+                    <label class="label-tag label-tag--danger">Label Tag Danger</label>
+                    <label class="label-tag label-tag--warning">Label Tag Warning</label>
+                    <label class="label-tag label-tag--info">Label Tag Info</label>
+                    <label class="label-tag label-tag--success">Label Tag Success</label>
+                    <label class="label-tag"><i class="mdi mdi-tag"></i> Label Tag Icon</label>
+                    <label class="label-tag">Label Tag Icon <i class="mdi mdi-tag"></i></label>
+                </p>
+            </div>
+        </div>
+
+        <div class="row add-bottom">
+            <div class="col-six">
+                <h3>Breadcrumbs</h3>
+
+                <label>Default Breadcrumb</label>
+                <nav class="breadcrumb-wrapper">
+                    <ol class="breadcrumb">
+                        <li><a href="#0">Home</a></li>
+                        <li><a href="#0">Page 2</a></li>
+                        <li><a href="#0">Page 3</a></li>
+                        <li class="active"><em>Page 4</em></li>
+                    </ol>
+                </nav>
+
+                <label>Breadcrumb Arrow</label>
+                <nav class="breadcrumb-wrapper">
+                    <ol class="breadcrumb breadcrumb-arrow">
+                        <li><a href="#0">Home</a></li>
+                        <li><a href="#0">Page 2</a></li>
+                        <li><a href="#0">Page 3</a></li>
+                        <li class="active"><em>Page 4</em></li>
+                    </ol>
+                </nav>
+                
+                <label>Breadcrumb w/ Icons</label>
+                <nav class="breadcrumb-wrapper">
+                    <ol class="breadcrumb breadcrumb-arrow">
+                        <li><a href="#0"><i class="mdi mdi-home-variant"></i> Home</a></li>
+                        <li class="active"><a href="#0">Page 2</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Empty State -->
+        <div class="row add-bottom">
+            <div class="col-full">
+                <h3>Empty States</h3>
+            </div>
+            <div class="col-four md-six tab-full">
+                <div class="table-empty empty-state">
+                    <img src="img/illustrations/undraw-nodata.svg" alt="" class="image-size-200">
+
+                    <h3>No Data Found</h3>
+                </div>
+            </div>
+            <div class="col-four md-six tab-full">
+                <div class="table-empty empty-state">
+                    <img src="img/illustrations/undraw-void.svg" alt="" class="image-size-200">
+
+                    <h3>We cannot find you're looking for.</h3>
+
+                    <a class="ids-btn primary-btn rounded-5-btn"><i class="mdi mdi-plus"></i> Add New</a>
+                </div>
+            </div>
+            <div class="col-four md-six tab-full">
+                <div class="table-empty empty-state">
+                    <img src="img/illustrations/undraw-empty.svg" alt="" class="image-size-200">
+
+                    <h3>No Record Found</h3>
+
+                    <a class="ids-btn primary-btn rounded-5-btn"><i class="mdi mdi-plus"></i> Add New</a>
+                    <a class="ids-btn outline-btn rounded-5-btn"><i class="mdi mdi-chevron-left"></i> Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="testdefault" class="modal modal-default">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Default</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="testdialog" class="modal modal-dialog">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row narrowest">
+                    <div class="col-full">
+                        <div class="modal-dialog--wrapper">
+                            <div class="modal-dialog--icon">
+                                <i class="mdi mdi-information-outline"></i>
+                            </div>
+
+                            <div class="modal-dialog--heading h4">
+                                Are we really alive?
+                            </div>
+
+                            <div class="modal-dialog--cta">
+                                <a class="ids-btn primary-btn rounded-10-btn block-btn">Yes</a>
+                                <a class="ids-btn secondary-btn rounded-10-btn block-btn close-modal">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="testsmall" class="modal modal-small">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Small</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="testmedium" class="modal modal-medium">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Medium</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="testlarge" class="modal modal-large">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Large</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="testfull" class="modal modal-full">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Full</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="testbottomsheet" class="modal modal-sheet modal-bottom">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Bottom Sheet</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+                <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="testtop" class="modal modal-default modal-top">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Top</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="testright" class="modal modal-default modal-right">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Right</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="testbottom" class="modal modal-default modal-bottom">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Bottom</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="testleft" class="modal modal-default modal-left">
+        <div class="modal-content">
+            <div class="modal-content--inner">
+                <div class="row modal-header">
+                    <div class="col-full">
+                        <div class="modal-header--title">
+                            <h3>Modal Left</h3>
+                        </div>
+                    </div>
+                    <a class="fab-btn action-btn--right close-modal"><i class="mdi mdi-close"></i></a>
+                </div>
+
+                <div class="row modal-body">
+                    <div class="col-full">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam commodi magnam culpa ratione maxime hic, accusantium eum placeat, vel optio nobis. Dignissimos magni voluptas laudantium veritatis optio vitae id incidunt adipisci ipsam. Quidem pariatur fugit ratione voluptates, libero cupiditate adipisci blanditiis reprehenderit.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

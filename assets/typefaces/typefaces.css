@@ -1,0 +1,154 @@
+/*
+======================================================================
+
+    IDS · IntegrityUI Typeface Stylesheet
+    09-01-21
+
+    (c) IDS Dev Team 2021
+    > hvarde
+
+    --------------------------------------------------
+
+    TOC:
+    # Maison Neue
+
+    Guide:
+    900 - Black
+    800 - Extra Bold
+    700 - Bold
+    600 - Semi Bold
+    500 - Medium
+    400 - Regular
+    300 - Light
+    200 - Thin
+    100 - Extra Thin
+
+======================================================================
+*/
+
+/* # Maison Neue */
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Black.otf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-ExtraBold.otf);
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Demi.otf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Medium.otf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Book.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Light.otf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-Thin.otf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-ExtraThin.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-BlackItalic.otf);
+    font-style: italic;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-ExtraBoldItalic.otf);
+    font-style: italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-BoldItalic.otf);
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-DemiItalic.otf);
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-MediumItalic.otf);
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-BookItalic.otf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-LightItalic.otf);
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-ThinItalic.otf);
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url(Maison-Neue/MaisonNeue-ExtraThinItalic.otf);
+    font-style: italic;
+    font-weight: 100;
+}

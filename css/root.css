@@ -1,0 +1,87 @@
+:root {
+    --font-main: "Maison Neue", sans-serif;
+    --font-sans: "Gilroy", sans-serif;
+    --font-mono: "GT Pressura Mono", monospace;
+    --font-serif: serif;
+    --font-cursive: cursive;
+
+    /** Brand **/
+    --color-main: #E50914;
+    --color-main-900: #6D012D;
+    --color-main-800: #84022C;
+    --color-main-700: #A40429;
+    --color-main-600: #C40621;
+    --color-main-500: #E50914;
+    --color-main-400: #EF4942;
+    --color-main-300: #F77A68;
+    --color-main-200: #FCB09B;
+    --color-main-100: #fdebe3;
+
+    /** Neutral **/
+    --color-dark: #212121;
+    --color-dark-400: #2D2E2F;
+    --color-dark-300: #414242;
+    --color-dark-200: #545656;
+    --color-dark-100: #686A69;
+    
+    --color-grey-dark: #333333;
+    --color-grey-dark-400: #454545;
+    --color-grey-dark-300: #565656;
+    --color-grey-dark-200: #686868;
+    --color-grey-dark-100: #797979;
+
+    --color-grey: #999999;
+    --color-grey-400: #A7A7A7;
+    --color-grey-300: #B5B5B5;
+    --color-grey-200: #C3C3C3;
+    --color-grey-100: #D1D1D1;
+    
+    --color-light-400: #FAFAFA;
+    --color-light-300: #F2F2F2;
+    --color-light-200: #F3F3F3;
+    --color-light-100: #F4F4F4;
+    --color-light: #FFFFFF;
+
+    /** Semantic **/
+    --color-danger: #E82943;
+    --color-warning: #FEAF46;
+    --color-info: #0097CE;
+    --color-success: #02B854;
+
+    /** Misc **/
+    --color-white-smoke: #FDF0F0;
+    --color-floral-white: #FAF7F2;
+    --color-whisper: #F5EAEA;
+    --color-sauvignon: #EFE8E3;
+    --color-pattens-blue: #E7EDF0;
+    --color-hawkes-blue: #D9DFEB;
+    --color-eclipse: #3A3636;
+    --color-sub: #6d7988;
+    --color-border: #E4E4E4;
+
+    /** Shadows **/
+    --shadow-soft: 0 20px 25px -5px rgba(0, 0, 0, / .10), 0 10px 10px -5px rgba(0, 0, 0, / .04);
+    --shadow-main: 0px 5px 15px -5px rgba(229, 9, 20, 0.75);
+    --shadow-main-200: 0px 5px 15px -5px rgba(247, 123, 104, 0.75);
+    --shadow-dark: 0px 5px 15px -5px rgba(16, 19, 22, .75);
+    --shadow-grey-dark: 0px 5px 15px -5px rgba(51, 51, 51, .75);
+    --shadow-grey: 0px 5px 15px -5px rgba(153, 153, 153, .75);
+    --shadow-grey-200: 0px 5px 15px -5px rgba(242, 242, 242, .75);
+    --shadow-light: 0px 5px 15px -5px rgba(255, 255, 255, 0.75);
+
+    /* Media Query Default */
+    --mob-width: 600px;
+    --tab-width: 800px;
+    --md-width: 1200px;
+    --lg-with: 1400px;
+
+    /* Media Query  */
+    --mobile-s-width: 320px;
+    --mobile-m-width: 375px;
+    --mobile-l-width: 425px;
+    --tablet-width: 768px;
+    --laptop-width: 1024px;
+    --laptop-l-width: 1440px;
+    --large-width: 1680px;
+    --four-k-width: 2560px;
+}
