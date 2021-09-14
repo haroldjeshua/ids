@@ -27,8 +27,8 @@
 </head>
 
 <body class="ids-components">
-    <div id="preloader">
-        <div id="loader">
+    <div class="preloader-wrapper">
+        <div class="preloader-inner">
             <img src="../img/ids-icon.png" alt="IDS Logo" class="ids-logo">
         </div>
     </div>
@@ -87,7 +87,7 @@
                         Typography
                     </div>
                     <div class="filter-item" data-filter="component-06">
-                        Buttons w/ Buttons Modifiers
+                        Buttons
                     </div>
                     <div class="filter-item" data-filter="component-07">
                         Tabs
@@ -143,25 +143,33 @@
             <div id="splashScreens" class="col-full half-bottom">
                 <h4>Splashscreens</h4>
             </div>
-            <div class="col-four tab-full">
-                <img src="" alt="splashscreens">
+            <div class="col-six tab-full add-bottom">
+                <div class="splashscreen-item">
+                    <img src="../img/docs/splashscreen-icon.png" alt="icon only">
+                </div>
                 <p>Icon Only</p>
             </div>
-            <div class="col-four tab-full">
-                <img src="" alt="splashscreens">
+            <div class="col-six tab-full add-bottom">
+                <div class="splashscreen-item">
+                    <img src="../img/docs/splashscreen-icon-logotext.png" alt="icon + logo text">
+                </div>
                 <p>Icon + Logo Text</p>
             </div>
-            <div class="col-four tab-full">
-                <img src="" alt="splashscreens">
+            <div class="col-six tab-full add-bottom">
+                <div class="splashscreen-item">
+                    <img src="../img/docs/splashscreen-icon-logotext-tagline.png" alt="icon + logo text + tagline">
+                </div>
                 <p>Icon + Logo Text w/ Tagline</p>
             </div>
-            <div class="col-four tab-full">
-                <img src="" alt="splashscreens">
+            <div class="col-six tab-full add-bottom">
+                <div class="splashscreen-item">
+                    <img src="../img/docs/splashscreen-icon-logotext-desc.png" alt="icon + logo text + desc">
+                </div>
                 <p>Icon + Logo Text w/ Description</p>
             </div>
 
             <div id="preLoaders" class="col-full add-top half-bottom">
-                <h4>Preloaders</h4>
+                <h4>Inline Loaders</h4>
             </div>
             <div class="col-four tab-full">
                 <div class="loader">Loading...</div>
@@ -203,13 +211,36 @@
         </div>
         
         <div class="row component-block component-06 hidden">
-            <div class="col-full">
-                <h3>Buttons w/ Buttons Modifiers</h3>
-                <p>---</p>
+            <div class="col-full add-bottom">
+                <h3 class="add-bottom">Buttons: Modifiers and Utilities</h3>
+
+                <div class="col-six">
+                    <p>IntegrityUI Buttons have different modifiers for every occasions:</p>
+                    <ul class="disc">
+                        <li>Contained (Primary)</li>
+                        <li>Outline</li>
+                        <li>Modern</li>
+                        <li>Link</li>
+                        <li>Flat / Raised</li>
+                    </ul>
+                </div>
+
+                <div class="col-six">
+                    <p>Utilities that may come in handy in building components:</p>
+                    <ul class="disc">
+                        <li>Alerts</li>
+                        <li>Rounds</li>
+                        <li>Sizes</li>
+                        <li>Special</li>
+                        <li>For Mobile App</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-eight tab-full mob-full add-bottom">
-                <h4>Clean Buttons</h4>
+            <div hidden class="col-eight tab-full mob-full add-bottom">
+                <h4>Display Buttons</h4>
+                <p>Display Buttons are for extra large displays.</p>
+
                 <p>
                     <a class="btn btn--primary full-width" href="#0">Primary Button</a>
                     <a class="btn full-width" href="#0">Default Button</a>
@@ -220,35 +251,209 @@
             </div>
 
             <div class="col-full tab-full mob-full add-bottom">
-                <h4>Primary Button</h4>
+                <h4>Contained Buttons</h4>
 
-                <a class="ids-btn primary-btn">Primary Button</a>
-                <a class="ids-btn dark-btn">Dark Button</a>
-                <a class="ids-btn grey-btn">Grey Button</a>
-                <a class="ids-btn light-btn">Light Button</a>
+                <p>
+                    <button class="ids-btn primary-btn">Primary Button</button>
+                    <button class="ids-btn dark-btn">Dark Button</button>
+                    <button class="ids-btn grey-btn">Grey Button</button>
+                    <button class="ids-btn light-btn">Light Button</button>
+                    <button class="ids-btn">Default Button</button>
+                </p>
 
-                <h5 class="add-top">Implementation:</h5>
                 <pre><code class="html">
-* insert code here *                
+&lt;button class="ids-btn primary-btn"&gt;Primary Button&lt;/button&gt;
+&lt;button class="ids-btn dark-btn"&gt;Dark Button&lt;/button&gt;
+&lt;button class="ids-btn grey-btn"&gt;Grey Button&lt;/button&gt;
+&lt;button class="ids-btn light-btn"&gt;Light Button&lt;/button&gt;
+&lt;button class="ids-btn"&gt;Default Button&lt;/button&gt;
                 </code></pre>
             </div>
 
             <div class="col-full tab-full mob-full add-bottom">
-                <h4>Outline Button</h4>
+                <h4>Outline Buttons</h4>
 
-                <a class="ids-btn outline-btn main-sec">Outline Button</a>
-                <a class="ids-btn outline-btn">Outline Button</a>
-                <a class="ids-btn outline-btn grey-sec">Outline Button</a>
-                <a class="ids-btn outline-btn light-sec">Outline Button</a>
+                <p>
+                    <button class="ids-btn primary-outline-btn">Primary Outline</button>
+                    <button class="ids-btn dark-outline-btn">Dark Outline</button>
+                    <button class="ids-btn grey-outline-btn">Grey Outline</button>
+                    <button class="ids-btn light-outline-btn">Light Button</button>
+                </p>
 
-                <h5 class="add-top">Implementation:</h5>
-                <pre><code class="javascript">
-$(document).ready(function() {
-    $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-    });
-});
-                    </code></pre>
+                <pre><code class="html">
+&lt;button class="ids-btn primary-outline-btn"&gt;Primary Outline&lt;/button&gt;
+&lt;button class="ids-btn dark-outline-btn"&gt;Dark Outline&lt;/button&gt;
+&lt;button class="ids-btn grey-outline-btn"&gt;Grey Outline&lt;/button&gt;
+&lt;button class="ids-btn light-outline-btn"&gt;Light Button&lt;/button&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h4>Modern Buttons</h4>
+
+                <p>
+                    <button class="ids-btn primary-modern-btn">Primary Modern</button>
+                    <button class="ids-btn dark-modern-btn">Dark Modern</button>
+                    <button class="ids-btn grey-modern-btn">Grey Modern</button>
+                    <button class="ids-btn light-modern-btn">Light Modern</button>
+                </p>
+
+                <pre><code>
+&lt;button class="ids-btn primary-modern-btn"&gt;Primary Modern&lt;/button&gt;
+&lt;button class="ids-btn dark-modern-btn"&gt;Dark Modern&lt;/button&gt;
+&lt;button class="ids-btn grey-modern-btn"&gt;Grey Modern&lt;/button&gt;
+&lt;button class="ids-btn light-modern-btn"&gt;Light Modern&lt;/button&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h4>Link Buttons</h4>
+
+                <p class="half-bottom">
+                    <a href="#!" class="ids-btn-link primary-btn">Primary Link</a>
+                    <a href="#!" class="ids-btn-link dark-btn">Dark Link</a>
+                    <a href="#!" class="ids-btn-link grey-btn">Grey  Link</a>
+                    <a href="#!" class="ids-btn-link light-btn">Light Link</a>
+                    <a href="#!" class="ids-btn-link default-btn">Default Link</a>
+                </p>
+
+                <pre><code>
+&lt;a href="#!" class="ids-btn-link primary-btn"&gt;Primary Link&lt;/a&gt;
+&lt;a href="#!" class="ids-btn-link dark-btn"&gt;Dark Link&lt;/a&gt;
+&lt;a href="#!" class="ids-btn-link grey-btn"&gt;Grey Link&lt;/a&gt;
+&lt;a href="#!" class="ids-btn-link light-btn"&gt;Light Link&lt;/a&gt;
+&lt;a href="#!" class="ids-btn-link"&gt;Default Link&lt;/a&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h4>Flat & Raised</h4>
+
+                <p>
+                    <button class="ids-btn flat-btn">Flat Button</button>
+                    <button class="ids-btn flat-btn light-text">Flat Light</button>
+                    <button class="ids-btn raised-btn">Raised Button</button>
+                </p>
+
+                <pre><code>
+&lt;button class="ids-btn flat-btn"&gt;Flat Button&lt;/button&gt;
+&lt;button class="ids-btn flat-btn light-text"&gt;Flat Light&lt;/button&gt;
+&lt;button class="ids-btn raised-btn"&gt;Raised Button&lt;/button&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h4>Alert Buttons</h4>
+
+                <p>
+                    <button class="ids-btn alert-btn danger-btn">Danger Button</button>
+                    <button class="ids-btn alert-btn warning-btn">Warning Button</button>
+                    <button class="ids-btn alert-btn info-btn">Info Button</button>
+                    <button class="ids-btn alert-btn success-btn">Success Button</button>
+                </p>
+                
+                <pre><code>
+&lt;button class="ids-btn alert-btn danger-btn"&gt;Danger Button&lt;/button&gt;
+&lt;button class="ids-btn alert-btn warning-btn"&gt;Warning Button&lt;/button&gt;
+&lt;button class="ids-btn alert-btn info-btn"&gt;Info Button&lt;/button&gt;
+&lt;button class="ids-btn alert-btn success-btn"&gt;Success Button&lt;/button&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h3 class="subhead">Utilities</h3>
+                <h4>Round Buttons</h4>
+
+                <p>
+                    <button class="ids-btn primary-btn rounded-btn">Rounded Button</button>
+                    <button class="ids-btn primary-btn rounded-15-btn">Rounded 15</button>
+                    <button class="ids-btn primary-btn rounded-10-btn">Rounded 10</button>
+                    <button class="ids-btn primary-btn rounded-5-btn">Rounded 5</button>
+                    <button class="ids-btn primary-btn rounded-2-btn">Rounded 2</button>
+                    <button class="ids-btn primary-btn rect-btn">Rectangle <small>(No Border Radius)</small></button>
+                </p>
+
+                <pre><code>
+&lt;button class="ids-btn primary-btn rounded-btn"&gt;Rounded Button&lt;/button&gt;
+&lt;button class="ids-btn primary-btn rounded-15-btn"&gt;Rounded 15&lt;/button&gt;
+&lt;button class="ids-btn primary-btn rounded-10-btn"&gt;Rounded 10&lt;/button&gt;
+&lt;button class="ids-btn primary-btn rounded-5-btn"&gt;Rounded 5&lt;/button&gt;
+&lt;button class="ids-btn primary-btn rounded-2-btn"&gt;Rounded 2&lt;/button&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h3 class="subhead">Utilities</h3>
+                <h4>Button Sizes</h4>
+
+                <p>
+                    <button class="ids-btn primary-btn small-btn">Small Button</button>
+                    <button class="ids-btn primary-btn">Regular Button</button>
+                    <button class="ids-btn primary-btn medium-btn">Medium Button</button>
+                    <button class="ids-btn primary-btn large-btn">Large Button</button>
+                    <button class="ids-btn primary-btn block-btn">Block Button</button>
+                </p>
+
+                <pre><code>
+&lt;button class="ids-btn primary-btn small-btn"&gt;Small Button&lt;/button&gt;
+&lt;button class="ids-btn primary-btn"&gt;Regular Button&lt;/button&gt;
+&lt;button class="ids-btn primary-btn medium-btn"&gt;Medium Button&lt;/button&gt;
+&lt;button class="ids-btn primary-btn large-btn"&gt;Large Button&lt;/button&gt;
+&lt;button class="ids-btn primary-btn block-btn"&gt;Block Button&lt;/button&gt;
+                </code></pre>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h3 class="subhead">Utilities</h3>
+                <h4>Special types of Buttons</h4>
+
+                <div class="row">
+                    <div class="col-six add-bottom">
+                        <h5>Toggle</h4>
+    
+                        <p>To be updated....</p>
+                    </div>
+                    <div class="col-six add-bottom">
+                        <h5>Multiselect</h5>
+    
+                        <p>To be updated....</p>
+                    </div>
+                    <div class="col-six add-bottom">
+                        <h5>Split/Dropdown</h4>
+    
+                        <p>To be updated....</p>
+                    </div>
+                    <div class="col-six add-bottom">
+                        <h5>Floating Action</h5>
+    
+                        <p class="bg-grey p-2">
+                            <a class="ids-fab-btn"><i class="mdi mdi-close"></i></a>
+                            <a class="ids-fab-btn dark-btn"><i class="mdi mdi-plus"></i></a>
+                            <a class="ids-fab-btn light-btn"><i class="mdi mdi-bullhorn-outline"></i></a>
+                            <a class="ids-fab-btn light-btn medium-btn"><i class="mdi mdi-bullhorn-outline"></i></a>
+                            <a class="ids-fab-btn light-btn large-btn"><i class="mdi mdi-bullhorn-outline"></i></a>
+                        </p>
+
+                        <pre><code>
+&lt;a class="ids-fab-btn"&gt;&lt;i class="mdi mdi-close"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn dark-btn"&gt;&lt;i class="mdi mdi-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn light-btn"&gt;&lt;i class="mdi mdi-bullhorn-outline"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn light-btn medium-btn"&gt;&lt;i class="mdi mdi-bullhorn-outline"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn light-btn large-btn"&gt;&lt;i class="mdi mdi-bullhorn-outline"&gt;&lt;/i&gt;&lt;/a&gt;
+                        </code></pre>
+
+                        <div class="alert-box alert-box--dark add-top">
+                            <p><i class="mdi mdi-information-outline"></i> Icons used for <strong>Floating Action Buttons</strong> are from <a href="https://materialdesignicons.com/" target="_blank">Material Design Icons. <i class="mdi mdi-open-in-new"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
+                <h3 class="subhead">Utilities</h3>
+                <h4>Buttons for Mobile</h4>
+
+                <p>To be updated...</p>
             </div>
         </div>
 
@@ -945,39 +1150,6 @@ $(document).ready(function() {
                 </nav>
             </div>
         </div>
-
-        <!-- Empty State -->
-        <div class="row add-bottom">
-            <div class="col-full">
-                <h3>Empty States</h3>
-            </div>
-            <div class="col-four md-six tab-full">
-                <div class="table-empty empty-state">
-                    <img src="img/illustrations/undraw-nodata.svg" alt="" class="image-size-200">
-
-                    <h3>No Data Found</h3>
-                </div>
-            </div>
-            <div class="col-four md-six tab-full">
-                <div class="table-empty empty-state">
-                    <img src="img/illustrations/undraw-void.svg" alt="" class="image-size-200">
-
-                    <h3>We cannot find you're looking for.</h3>
-
-                    <a class="ids-btn primary-btn rounded-5-btn"><i class="mdi mdi-plus"></i> Add New</a>
-                </div>
-            </div>
-            <div class="col-four md-six tab-full">
-                <div class="table-empty empty-state">
-                    <img src="img/illustrations/undraw-empty.svg" alt="" class="image-size-200">
-
-                    <h3>No Record Found</h3>
-
-                    <a class="ids-btn primary-btn rounded-5-btn"><i class="mdi mdi-plus"></i> Add New</a>
-                    <a class="ids-btn outline-btn rounded-5-btn"><i class="mdi mdi-chevron-left"></i> Back to Home</a>
-                </div>
-            </div>
-        </div>
     </section>
     
     <div id="testdefault" class="modal modal-default">
@@ -1236,7 +1408,7 @@ $(document).ready(function() {
             $(this).addClass('active');
             $('.component-block').addClass('hidden');
             $('.component-block.' + $(this).attr('data-filter')).removeClass('hidden');
-        }); 
+        });
     </script>
 </body>
 
