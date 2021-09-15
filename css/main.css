@@ -590,16 +590,6 @@ pre>code {
     margin: 0;
 }
 
-pre>code::-webkit-selection {
-    background: rgba(255, 255, 255, 0.75);
-    color: var(--color-grey-dark-300);
-}
-
-::selection {
-    background: rgba(255, 255, 255, 0.75);
-    color: var(--color-grey-dark-300);
-}
-
 pre.prettyprint>code {
     border: none;
 }
