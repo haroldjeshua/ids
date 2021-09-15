@@ -37,6 +37,7 @@
  * ------------------------------------------------------------------- */
 @import url("../assets/typefaces/typefaces.css");
 @import url("../assets/icons/mdi/css/materialdesignicons.min.css");
+@import url("../assets/plugins/highlight-js/default.min.css");
 @import url("root.css");
 
 

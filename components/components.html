@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/vendor.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark-reasonable.css">
 
     <script src="../js/modernizr.js"></script>
     <script src="../js/pace.min.js"></script>
@@ -223,7 +223,7 @@
                         <pre><code>
 &lt;div class="preloader-wrapper"&gt;
     &lt;div class="preloader-inner"&gt;
-        &lt;div class="loader2&gt;&lt;/div&gt;
+        &lt;div class="loader2"&gt;&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                         </code></pre>
@@ -237,9 +237,9 @@
                         <pre><code>
 &lt;div class="preloader-wrapper"&gt;
     &lt;div class="preloader-inner"&gt;
-        &lt;div class="loader2&gt;&lt;/div&gt;
+        &lt;div class="loader2"&gt;&lt;/div&gt;
         &lt;h1&gt;Sample Title&lt;/h1&gt;
-        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                         </code></pre>
@@ -253,9 +253,9 @@
                         <pre><code>
 &lt;div class="preloader-wrapper"&gt;
     &lt;div class="preloader-inner"&gt;
-        &lt;div class="loader2&gt;&lt;/div&gt;
+        &lt;div class="loader2"&gt;&lt;/div&gt;
         &lt;h1&gt;Sample Title&lt;/h1&gt;
-        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                         </code></pre>
@@ -269,8 +269,8 @@
                         <pre><code>
 &lt;div class="preloader-wrapper"&gt;
     &lt;div class="preloader-inner"&gt;
-        &lt;div class="loader2&gt;&lt;/div&gt;
-        &lt;p class="lead"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;p&gt;
+        &lt;div class="loader2"&gt;&lt;/div&gt;
+        &lt;p class="lead"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                         </code></pre>
@@ -299,9 +299,9 @@
                     </div>
                     <div class="col-four tab-full">
                         <h5>Loader2</h5>
-                        <div class="loader2">Loading...</div>
+                        <div class="loader2"">Loading...</div>
                         <pre><code>
-&lt;div class="loader2"&gt;Loading...&lt;/div&gt;
+&lt;div class="loader2""&gt;Loading...&lt;/div&gt;
                         </code></pre>
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                 <div class="row">
                     <div class="col-full half-top">
                         <div class="alert-box alert-box--dark">
-                            <h5><i class="mdi mdi-information-outline"></i> Learn more about CSS Loaders: <a href="#!"><strong>@githubrepo</strong></a></h5>
+                            <h5><i class="mdi mdi-information-outline"></i> Learn more about CSS Loaders: <a href="https://github.com/lukehaas/css-loaders" target="_blank"><strong>https://github.com/lukehaas/css-loaders</strong></a></h5>
                         </div>
                     </div>
                 </div>
@@ -1730,7 +1730,8 @@
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="../assets/plugins/highlight-js/highlight.min.js"></script>
+    <script src="../assets/plugins/highlight-js/go.min.js"></script>
 
     <script>
         $('.filter-item').on('click', function() {
@@ -1739,6 +1740,7 @@
             $('.component-block').addClass('hidden');
             $('.component-block.' + $(this).attr('data-filter')).removeClass('hidden');
         });
+        hljs.highlightAll();
     </script>
 </body>
 

@@ -584,10 +584,20 @@ code {
 
 pre>code {
     display: block;
-    white-space: pre;
+    white-space: pre-wrap;
     line-height: 2;
     padding: 0 2rem;
     margin: 0;
+}
+
+pre>code::-webkit-selection {
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--color-grey-dark-300);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--color-grey-dark-300);
 }
 
 pre.prettyprint>code {
