@@ -69,13 +69,15 @@
     --shadow-grey-200: 0px 5px 15px -5px rgba(242, 242, 242, .75);
     --shadow-light: 0px 5px 15px -5px rgba(255, 255, 255, 0.75);
 
-    /* Media Query Default */
+    /** Media Query Default **/
+    --sm-width: 400px;
     --mob-width: 600px;
     --tab-width: 800px;
-    --md-width: 1200px;
-    --lg-with: 1400px;
+    --md-width: 1000px;
+    --col-width: 1200px;
+    --lg-width: 1400px;
 
-    /* Media Query  */
+    /** Media Query Custom **/
     --mobile-s-width: 320px;
     --mobile-m-width: 375px;
     --mobile-l-width: 425px;

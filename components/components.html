@@ -46,7 +46,7 @@
             <ul class="header-main-nav">
                 <li><a href="../news/" title="What's New"><i class="mdi mdi-circle-medium"></i> What's New</a></li>
                 <li><a href="../ids/" title="Design">Design</a></li>
-                <li class="active"><a href="../" title="Components">Components</a></li>
+                <li class="active"><a href="./" title="Components">Components</a></li>
             </ul>
 
             <ul class="header-social">
@@ -60,7 +60,7 @@
     <section class="s-section">
         <div class="row has-bottom-sep add-bottom">
             <div class="col-eight tab-full mob-full">
-                <h3 class="subhead">IDS</h3>
+                <h3 class="subhead"><a href="./"><i class="mdi mdi-chevron-left"></i>Back to Intro</a></h3>
 
                 <h1>Components</h1>
 
@@ -75,10 +75,10 @@
                         Splash Screens + Preloaders
                     </div>
                     <div class="filter-item" data-filter="component-02">
-                        Grid System
+                        Navigation Bars
                     </div>
                     <div class="filter-item" data-filter="component-03">
-                        Navigation Bars
+                        Grid System
                     </div>
                     <div class="filter-item" data-filter="component-04">
                         Section + Section Utilities
@@ -137,62 +137,380 @@
         <div class="row component-block component-01 hidden">
             <div class="col-full add-bottom">
                 <h3>Splash Screens + Preloaders</h3>
-                <p><strong><a href="#splashScreens">Splash Screens</a></strong> are for logo while <strong><a href="#preLoaders">Preloaders</a></strong> are for event process waiting for an output.</p>
+                <p><strong><a href="#splashScreens" class="smoothscroll">Splash Screens</a></strong> are for logo while <strong><a href="#preLoaders" class="smoothscroll">Preloaders</a></strong> are for event process waiting for an output with a <strong><a href="#inlineLoaders" class="smoothscroll">loader component</a></strong>.</p>
             </div>
 
             <div id="splashScreens" class="col-full half-bottom">
                 <h4>Splashscreens</h4>
-            </div>
-            <div class="col-six tab-full add-bottom">
-                <div class="splashscreen-item">
-                    <img src="../img/docs/splashscreen-icon.png" alt="icon only">
+
+                <div class="row half-top">
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Icon Only</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/splashscreen-icon.png" alt="icon only">
+                        </div>
+
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;img src="../img/ids-icon.png" alt="IDS Logo" class="ids-logo"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Icon + Logo Text</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/splashscreen-icon-logotext.png" alt="icon + logo text">
+                        </div>
+
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;img src="../img/ids-icon.png" alt="IDS Logo" class="ids-logo"&gt;
+        &lt;h1&gt;IntegrityNet&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Icon + Logo Text w/ Tagline</h4>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/splashscreen-icon-logotext-tagline.png" alt="icon + logo text + tagline">
+                        </div>
+
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;img src="../img/ids-icon.png" alt="IDS Logo" class="ids-logo"&gt;
+        &lt;h1&gt;IntegrityNet&lt;/h1&gt;
+        &lt;p class="lead"&gt;Passion for Excellence and Dedication to Rendering Quality Service&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Icon + Logo Text w/ Description</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/splashscreen-icon-logotext-desc.png" alt="icon + logo text + desc">
+                        </div>
+
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;img src="../img/ids-icon.png" alt="IDS Logo" class="ids-logo"&gt;
+        &lt;h1&gt;IntegrityNet&lt;/h1&gt;
+        &lt;p&gt;Integrity is a wide-ranged solutions company based in Batangas, Philippines.&lt;br&gt;Building a great business solutions for industry-leading brands.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
                 </div>
-                <p>Icon Only</p>
-            </div>
-            <div class="col-six tab-full add-bottom">
-                <div class="splashscreen-item">
-                    <img src="../img/docs/splashscreen-icon-logotext.png" alt="icon + logo text">
-                </div>
-                <p>Icon + Logo Text</p>
-            </div>
-            <div class="col-six tab-full add-bottom">
-                <div class="splashscreen-item">
-                    <img src="../img/docs/splashscreen-icon-logotext-tagline.png" alt="icon + logo text + tagline">
-                </div>
-                <p>Icon + Logo Text w/ Tagline</p>
-            </div>
-            <div class="col-six tab-full add-bottom">
-                <div class="splashscreen-item">
-                    <img src="../img/docs/splashscreen-icon-logotext-desc.png" alt="icon + logo text + desc">
-                </div>
-                <p>Icon + Logo Text w/ Description</p>
             </div>
 
             <div id="preLoaders" class="col-full add-top half-bottom">
-                <h4>Inline Loaders</h4>
+                <h4>Fullscreen Preloaders</h4>
+
+                <div class="row half-top">
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Loader Only</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/preloader-loader.png" alt="loader only">
+                        </div>
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;div class="loader2&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Loader + Title</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/preloader-title.png" alt="loader + title">
+                        </div>
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;div class="loader2&gt;&lt;/div&gt;
+        &lt;h1&gt;Sample Title&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Loader + Title w/ Description</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/preloader-title-desc.png" alt="loader + title + desc">
+                        </div>
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;div class="loader2&gt;&lt;/div&gt;
+        &lt;h1&gt;Sample Title&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full add-bottom">
+                        <h5>Loader + Description</h5>
+                        <div class="splashscreen-item">
+                            <img src="../img/docs/preloader-desc.png" alt="loader + title + desc">
+                        </div>
+                        <pre><code>
+&lt;div class="preloader-wrapper"&gt;
+    &lt;div class="preloader-inner"&gt;
+        &lt;div class="loader2&gt;&lt;/div&gt;
+        &lt;p class="lead"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis officiis maxime?&lt;p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
             </div>
-            <div class="col-four tab-full">
-                <div class="loader">Loading...</div>
-            </div>
-            <div class="col-four tab-full">
-                <div class="loader1">Loading...</div>
-            </div>
-            <div class="col-four tab-full">
-                <div class="loader3">Loading...</div>
+
+            <div id="inlineLoaders" class="col-full add-top half-bottom">
+                <h3 class="subhead"><i class="mdi mdi-plus-box-outline"></i> Bonus</h3>
+                <h4>Loader Component</h4>
+
+                <div class="row add-top">
+                    <div class="col-four tab-full">
+                        <h5>Loader</h5>
+                        <div class="loader">Loading...</div>
+                        <pre><code>
+&lt;div class="loader"&gt;Loading...&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    <div class="col-four tab-full">
+                        <h5>Loader1</h5>
+                        <div class="loader1">Loading...</div>
+                        <pre><code>
+&lt;div class="loader1"&gt;Loading...&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                    <div class="col-four tab-full">
+                        <h5>Loader2</h5>
+                        <div class="loader2">Loading...</div>
+                        <pre><code>
+&lt;div class="loader2"&gt;Loading...&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-full half-top">
+                        <div class="alert-box alert-box--dark">
+                            <h5><i class="mdi mdi-information-outline"></i> Learn more about CSS Loaders: <a href="#!"><strong>@githubrepo</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row component-block component-02 hidden">
             <div class="col-full">
-                <h3>Grid System</h3>
-                <p>The layout grid can be adjusted to meet the needs of both your product and multiple device sizes.</p>
-            </div>
-        </div>
-
-        <div class="row component-block component-03 hidden">
-            <div class="col-full">
                 <h3>Navigation Bars</h3>
                 <p>---</p>
+            </div>
+        </div>
+        
+        <div class="row component-block component-03 hidden">
+            <div class="col-full">
+                <h2>Grid System</h2>
+                <p>The layout grid can be adjusted to meet the needs of both your product and multiple device sizes.</p>
+            </div>
+
+            <div class="col-full add-top">
+                <h3>Classic Grid</h3>
+
+                <div class="demo-grid-wrapper">
+                    <div class="row">
+                        <div class="col-full center-align"><h4>Column:col-* ( > 1200px )</h4></div>
+                        <div class="col-full md-full demo-grid-item">col-12</div>
+                        <div class="col-six md-six demo-grid-item">col-06</div>
+                        <div class="col-six md-six demo-grid-item">col-06</div>
+                        <div class="col-five md-five demo-grid-item">col-05</div>
+                        <div class="col-seven md-seven demo-grid-item">col-07</div>
+                        <div class="col-four md-four demo-grid-item">col-04</div>
+                        <div class="col-eight md-eight demo-grid-item">col-08</div>
+                        <div class="col-three md-three demo-grid-item">col-03</div>
+                        <div class="col-nine md-nine demo-grid-item">col-09</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-ten md-ten demo-grid-item">col-10</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-eleven demo-grid-item">col-11</div>
+                        <div class="col-four md-four demo-grid-item">col-04</div>
+                        <div class="col-four md-four demo-grid-item">col-04</div>
+                        <div class="col-four md-four demo-grid-item">col-04</div>
+                        <div class="col-three md-three demo-grid-item">col-03</div>
+                        <div class="col-three md-three demo-grid-item">col-03</div>
+                        <div class="col-three md-three demo-grid-item">col-03</div>
+                        <div class="col-three md-three demo-grid-item">col-03</div>
+                        <div class="col-two-four md-two-four demo-grid-item">col-02-4 (2.4)</div>
+                        <div class="col-two-four md-two-four demo-grid-item">col-02-4 (2.4)</div>
+                        <div class="col-two-four md-two-four demo-grid-item">col-02-4 (2.4)</div>
+                        <div class="col-two-four md-two-four demo-grid-item">col-02-4 (2.4)</div>
+                        <div class="col-two-four md-two-four demo-grid-item">col-02-4 (2.4)</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-two md-two demo-grid-item">col-02</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                        <div class="col-one md-one demo-grid-item">col-01</div>
+                    </div>
+                </div>
+
+                <div class="demo-grid-wrapper narrow">
+                    <div class="row">
+                        <div class="col-full center-align"><h4>Medium: md-* ( > 1000px )</h4></div>
+                        <div class="col-full demo-grid-item">md-12</div>
+                        <div class="col-six demo-grid-item">md-06</div>
+                        <div class="col-six demo-grid-item">md-06</div>
+                        <div class="col-five demo-grid-item">md-05</div>
+                        <div class="col-seven demo-grid-item">md-07</div>
+                        <div class="col-four demo-grid-item">md-04</div>
+                        <div class="col-eight demo-grid-item">md-08</div>
+                        <div class="col-three demo-grid-item">md-03</div>
+                        <div class="col-nine demo-grid-item">md-09</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-ten demo-grid-item">md-10</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-eleven demo-grid-item">md-11</div>
+                        <div class="col-four demo-grid-item">md-04</div>
+                        <div class="col-four demo-grid-item">md-04</div>
+                        <div class="col-four demo-grid-item">md-04</div>
+                        <div class="col-three demo-grid-item">md-03</div>
+                        <div class="col-three demo-grid-item">md-03</div>
+                        <div class="col-three demo-grid-item">md-03</div>
+                        <div class="col-three demo-grid-item">md-03</div>
+                        <div class="col-two-four demo-grid-item">md-02-4 (2.4)</div>
+                        <div class="col-two-four demo-grid-item">md-02-4 (2.4)</div>
+                        <div class="col-two-four demo-grid-item">md-02-4 (2.4)</div>
+                        <div class="col-two-four demo-grid-item">md-02-4 (2.4)</div>
+                        <div class="col-two-four demo-grid-item">md-02-4 (2.4)</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-two demo-grid-item">md-02</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                        <div class="col-one demo-grid-item">md-01</div>
+                    </div>
+                </div>
+                
+                <div class="demo-grid-wrapper narrower">
+                    <div class="row">
+                        <div class="col-full center-align"><h4>Tablet: tab-* ( > 800px )</h4></div>
+                        <div class="col-full tab-full demo-grid-item">tab-12</div>
+                        <div class="col-six tab-six demo-grid-item">tab-06</div>
+                        <div class="col-six tab-six demo-grid-item">tab-06</div>
+                        <div class="col-four tab-four demo-grid-item">tab-04</div>
+                        <div class="col-eight tab-eight demo-grid-item">tab-08</div>
+                        <div class="col-three tab-three demo-grid-item">tab-03</div>
+                        <div class="col-nine tab-nine demo-grid-item">tab-09</div>
+                        <div class="col-four tab-four demo-grid-item">tab-04</div>
+                        <div class="col-four tab-four demo-grid-item">tab-04</div>
+                        <div class="col-four tab-four demo-grid-item">tab-04</div>
+                        <div class="col-three tab-three demo-grid-item">tab-03</div>
+                        <div class="col-three tab-three demo-grid-item">tab-03</div>
+                        <div class="col-three tab-three demo-grid-item">tab-03</div>
+                        <div class="col-three tab-three demo-grid-item">tab-03</div>
+                        <div class="col-two-four tab-two-four demo-grid-item">tab-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four demo-grid-item">tab-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four demo-grid-item">tab-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four demo-grid-item">tab-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four demo-grid-item">tab-02-4 (2.4)</div>
+                    </div>
+                </div>
+                
+                <div class="demo-grid-wrapper narrowest">
+                    <div class="row">
+                        <div class="col-full center-align"><h4>Mobile: mob-* ( > 600px )</h4></div>
+                        <div class="col-full tab-full mob-full demo-grid-item">mob-12</div>
+                        <div class="col-six tab-six mob-six demo-grid-item">mob-06</div>
+                        <div class="col-six tab-six mob-six demo-grid-item">mob-06</div>
+                        <div class="col-four tab-four mob-four demo-grid-item">mob-04</div>
+                        <div class="col-eight tab-eight mob-eight demo-grid-item">mob-08</div>
+                        <div class="col-three tab-three mob-three demo-grid-item">mob-03</div>
+                        <div class="col-nine tab-nine demo-grid-item">mob-09</div>
+                        <div class="col-four tab-four mob-four demo-grid-item">mob-04</div>
+                        <div class="col-four tab-four mob-four demo-grid-item">mob-04</div>
+                        <div class="col-four tab-four mob-four demo-grid-item">mob-04</div>
+                        <div class="col-three tab-three mob-three demo-grid-item">mob-03</div>
+                        <div class="col-three tab-three mob-three demo-grid-item">mob-03</div>
+                        <div class="col-three tab-three mob-three demo-grid-item">mob-03</div>
+                        <div class="col-three tab-three mob-three demo-grid-item">mob-03</div>
+                        <div class="col-two-four tab-two-four mob-two-four demo-grid-item">mob-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four mob-two-four demo-grid-item">mob-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four mob-two-four demo-grid-item">mob-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four mob-two-four demo-grid-item">mob-02-4 (2.4)</div>
+                        <div class="col-two-four tab-two-four mob-two-four demo-grid-item">mob-02-4 (2.4)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-full add-top">
+                <h4>Breakpoints</h4>
+
+                <div class="row half-top">
+                    <div class="col-six tab-full">
+                        <h5>Default Media Query</h5>
+                        <pre><code>
+--lg-width: 1400px;
+--col-width: 1200px;
+--md-width: 1000px;
+--tab-width: 800px;
+--mob-width: 600px;
+--sm-width: 400px;
+                        </code></pre>
+                    </div>
+
+                    <div class="col-six tab-full">
+                        <h5>Custom Media Query</h5>
+                        <pre><code>
+--mobile-s-width: 320px;
+--mobile-m-width: 375px;
+--mobile-l-width: 425px;
+--tablet-width: 768px;
+--laptop-width: 1024px;
+--laptop-l-width: 1440px;
+--large-width: 1680px;
+--four-k-width: 2560px;
+                        </code></pre>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -222,6 +540,7 @@
                         <li>Modern</li>
                         <li>Link</li>
                         <li>Flat / Raised</li>
+                        <li>with Icons</li>
                     </ul>
                 </div>
 
@@ -343,6 +662,15 @@
             </div>
 
             <div class="col-full tab-full mob-full add-bottom">
+                <h4>Buttons w/ Icons</h4>
+
+                <p>
+                    <button class="ids-btn primary-btn"><i class="mdi mdi-plus"></i> Icon Button Left</button>
+                    <button class="ids-btn primary-btn">Icon Button Right <i class="mdi mdi-plus"></i> </button>
+                </p>
+            </div>
+
+            <div class="col-full tab-full mob-full add-bottom">
                 <h4>Alert Buttons</h4>
 
                 <p>
@@ -429,21 +757,23 @@
                         <p class="bg-grey p-2">
                             <a class="ids-fab-btn"><i class="mdi mdi-close"></i></a>
                             <a class="ids-fab-btn dark-btn"><i class="mdi mdi-plus"></i></a>
-                            <a class="ids-fab-btn light-btn"><i class="mdi mdi-bullhorn-outline"></i></a>
-                            <a class="ids-fab-btn light-btn medium-btn"><i class="mdi mdi-bullhorn-outline"></i></a>
-                            <a class="ids-fab-btn light-btn large-btn"><i class="mdi mdi-bullhorn-outline"></i></a>
+                            <a class="ids-fab-btn light-btn"><i class="mdi mdi-information-outline"></i></a>
+                            <a class="ids-fab-btn light-btn medium-btn"><i class="mdi mdi-alert"></i></a>
+                            <a class="ids-fab-btn light-btn large-btn"><i class="mdi mdi-head-question"></i></a>
                         </p>
 
                         <pre><code>
 &lt;a class="ids-fab-btn"&gt;&lt;i class="mdi mdi-close"&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a class="ids-fab-btn dark-btn"&gt;&lt;i class="mdi mdi-plus"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="ids-fab-btn light-btn"&gt;&lt;i class="mdi mdi-bullhorn-outline"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="ids-fab-btn light-btn medium-btn"&gt;&lt;i class="mdi mdi-bullhorn-outline"&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a class="ids-fab-btn light-btn large-btn"&gt;&lt;i class="mdi mdi-bullhorn-outline"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn light-btn"&gt;&lt;i class="mdi mdi-information-outline"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn light-btn medium-btn"&gt;&lt;i class="mdi mdi-alert"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="ids-fab-btn light-btn large-btn"&gt;&lt;i class="mdi mdi-head-question"&gt;&lt;/i&gt;&lt;/a&gt;
                         </code></pre>
 
                         <div class="alert-box alert-box--dark add-top">
-                            <p><i class="mdi mdi-information-outline"></i> Icons used for <strong>Floating Action Buttons</strong> are from <a href="https://materialdesignicons.com/" target="_blank">Material Design Icons. <i class="mdi mdi-open-in-new"></i></a></p>
+                            <p><i class="mdi mdi-information-outline"></i> Icons used for <strong>Floating Action Buttons</strong> are from <a href="https://materialdesignicons.com/" target="_blank">Material Design Icons <i class="mdi mdi-open-in-new"></i></a>.</p>
+
+                            <p class="half-top"><em>Related Topic:</em> <a href="#iconography"><strong>Iconography</strong></a> & <a href="#icons"><strong>Icons (Components)</strong></a></p>
                         </div>
                     </div>
                 </div>

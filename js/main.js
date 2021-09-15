@@ -3,13 +3,11 @@
     "use strict";
 
     var cfg = {
-        scrollDuration: 800, // smoothscroll duration
+        scrollDuration: 800
     },
 
     $WIN = $(window);
 
-    // Add the User Agent to the <html>
-    // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
@@ -24,13 +22,10 @@
             //force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
             $(".preloader-inner").fadeOut("slow", function () {
-                // will fade out the whole DIV that covers the website.
                 $(".preloader-wrapper").delay(300).fadeOut("slow");
             });
 
-            // for hero content animations 
             $("html").removeClass('cl-preload');
             $("html").addClass('cl-loaded');
 
