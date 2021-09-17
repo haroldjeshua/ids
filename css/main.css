@@ -136,13 +136,13 @@ a.cta-link:hover {
  * ----------------------------------------------------- */
 
 /* ## Selection */
-::-webkit-selection {
+/* ::-webkit-selection {
     background: rgba(25, 26, 27, 0.25);
 }
 
 ::selection {
     background: rgba(25, 26, 27, 0.25);
-}
+} */
 
 /* ## Cursor */
 /* optional */
