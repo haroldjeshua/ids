@@ -1323,7 +1323,7 @@ textarea {
     cursor: pointer;
 }
 
-no-radius {
+.no-radius {
     border-radius: 0;
 }
 
