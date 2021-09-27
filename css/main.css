@@ -1063,6 +1063,20 @@ textarea {
     min-height: 15rem;
 }
 
+input[type="email"]:focus ~ .textfield-icon,
+input[type="number"]:focus ~ .textfield-icon,
+input[type="search"]:focus ~ .textfield-icon,
+input[type="text"]:focus ~ .textfield-icon,
+input[type="tel"]:focus ~ .textfield-icon,
+input[type="url"]:focus ~ .textfield-icon,
+input[type="password"]:focus ~ .textfield-icon,
+input[type="file"]:focus ~ .textfield-icon,
+input[type="date"]:focus ~ .textfield-icon,
+textarea:focus ~ .textfield-icon,
+select:focus ~ .textfield-icon {
+    color: var(--color-dark);
+}
+
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -2158,12 +2172,12 @@ button.ids-btn:hover {
 }
 
 .s-header {
-    z-index: 500;
     width: 100%;
     height: 78px;
     background-color: transparent;
     position: absolute;
     top: 28px;
+    z-index: 4;
 }
 
 .s-header.sticky {
@@ -4017,7 +4031,8 @@ a.ids-btn.sidebarBurger {
 }
 
 .textfield-inner .switch {
-    margin: 1rem 0rem;
+    padding-left: 60px;
+    transform: translateY(50%);
 }
 
 .textfield-icon {
@@ -4146,6 +4161,10 @@ a.ids-btn.sidebarBurger {
     scroll-behavior: smooth;
 }
 
+.modal.modal-active {
+    display: flex;
+}
+
 .modal-content {
     position: relative;
     height: 100%;
@@ -4197,48 +4216,43 @@ a.ids-btn.sidebarBurger {
 .modal-full .modal-content {
     width: 100%;
     height: 100%;
-    margin-top: 0;
 }
 
 .modal-sheet .modal-content {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    margin-top: 4rem;
+    height: auto;
 }
 
 .modal-large .modal-content {
     width: 90%;
     max-width: 1000px;
     height: auto;
-    margin-top: 2rem;
 }
 
 .modal-medium .modal-content {
     width: 80%;
     max-width: 800px;
     height: auto;
-    margin-top: 2rem;
 }
 
 .modal-default .modal-content {
     width: 70%;
     max-width: 700px;
     height: auto;
-    margin-top: 2rem;
 }
 
 .modal-small .modal-content {
     width: 60%;
     max-width: 600px;
     height: auto;
-    margin-top: 2rem;
 }
 
 .modal-dialog .modal-content {
     width: 40%;
     max-width: 400px;
     height: auto;
-    margin-top: 10.5rem;
 }
 
 .modal-dialog .modal-content--inner {
@@ -4262,7 +4276,6 @@ a.ids-btn.sidebarBurger {
     top: 0;
     right: 0;
 } */
-
 
 .modal .ids-fab-btn.action-btn--left,
 .modal .ids-fab-btn.back-modal {
@@ -4697,6 +4710,18 @@ input:checked~.switch-text {
 
 input:checked~.switch-text--left {
     color: #ccc;
+}
+
+.switch-description {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    line-height: 1;
 }
 
 .main-styles {
