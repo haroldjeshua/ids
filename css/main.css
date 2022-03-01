@@ -4233,7 +4233,7 @@ a.ids-btn.sidebarBurger {
     bottom: 0;
     width: 100%;
     height: auto;
-    max-height: 100%;
+    max-height: 100vh;
 }
 
 .modal-large .modal-content {
